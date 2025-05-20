@@ -65,6 +65,34 @@
 
 # Solicitar al usuario que ingrese números (hasta que no quiera ingresar más). 
 # Calcular la suma de los números positivos y el producto de los negativos.
+
+# positivo=0
+# negativos_prod=1
+# numero=int(input("Ingrese un número: "))
+# print("Si no quiere ingresar más numeros, ingrese 0")
+# while numero!=0:
+#     if numero>0:
+#         positivo+=numero
+#         numero=int(input("Ingrese un número: "))
+#     elif numero<0:
+#         negativos_prod*=numero
+#         numero=int(input("Ingrese un número: "))
+# print(f"Producto de los negativos insertados: {negativos_prod}. Suma de los positivos insertados: {positivo}")
+
+
 # Ingresar 10 números enteros. Determinar el máximo y el mínimo.
 
+vueltas=0
+mayor=int(input("Ingrese un número: "))
+menor=mayor
+while vueltas<5:
+    numeros=int(input("Ingrese un número: "))
+    if numeros<mayor:
+        vueltas+=1
+    else:
+        mayor=numeros
+        vueltas+=1
 
+    if numeros < menor:
+        menor = numeros
+print(f"Numero menor: {menor}. Numero mayor: {mayor}")
