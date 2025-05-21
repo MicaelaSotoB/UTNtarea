@@ -33,14 +33,58 @@
 
 # Se ingresan un máximo de 10 números o hasta que el usuario ingrese el número 0. 
 # Mostrar la suma y el promedio de todos los números.
+# suma=0
+# for i in range(11):
+#     numeros=int(input("Ingrese un numero a sumar: "))
+#     if numeros != 0:
+#         suma+=numeros
+#     else:
+#         break
 
-
+# promedio=suma/i
+# print(promedio)
 
 # Imprimir los números múltiplos de 3 entre el 1 y el 10.
+
+
+# for i in range(1, 11):
+#     print(f"3 x {i}={3*i}")
+#     if i%3==0:
+#         print(f"{i} es múltiplo de 3")
+
+
 # Mostrar los números pares que hay desde la unidad hasta el número 50.
-# Realizar un programa que permita mostrar una pirámide de números. Por ejemplo: si se ingresa el numero 5, la salida del programa será la siguiente:
 
+# for i in range(1, 51):
+#     if i%2==0:
+#         print(f"{i} Es número par")
 
-# Ingresar un número. Mostrar todos los divisores que hay desde el 1 hasta el número ingresado. Mostrar la cantidad de divisores encontrados.
+# Realizar un programa que permita mostrar una pirámide de números. 
+# Por ejemplo: si se ingresa el numero 5, la salida del programa será la siguiente:
+
+# num=int(input("Ingrese un numero para empear la piramide: "))
+# for i in range(num):
+#     for j in range(1, i+2):
+#         print(j, end='')
+#     print()
+
+# Ingresar un número. Mostrar todos los divisores que hay desde el 1 hasta el número ingresado. 
+# Mostrar la cantidad de divisores encontrados.
+
+# num=int(input("Ingrese un numero: "))
+# for i in range(1, num):
+#     print(i)
+#     if num%i==0:
+#         print(f"{i} es divisor de {num}")
+
 # Ingresar un número. Determinar si el número es primo o no.
+num=int(input("Ingrese un numero: "))
+for i in range(1, num+1):
+    if num % i==0 and num % num==0:
+        print(f"Es primo: {num} en la vuelta: {i}")
+    else:
+        print("TA MAL")
+
+# Arreglar el de arriba
+
 # Ingresar un número. Mostrar cada número primo que hay entre el 1 y el número ingresado. Informar cuántos números primos se encontraron.
