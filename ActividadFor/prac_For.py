@@ -78,13 +78,29 @@
 #         print(f"{i} es divisor de {num}")
 
 # Ingresar un número. Determinar si el número es primo o no.
-num=int(input("Ingrese un numero: "))
-for i in range(1, num+1):
-    if num % i==0 and num % num==0:
-        print(f"Es primo: {num} en la vuelta: {i}")
-    else:
-        print("TA MAL")
 
-# Arreglar el de arriba
+# num=int(input("Ingrese para saber si es un numero primo: "))
+# cant_divisores=2
+# for i in range(2, num):
+#     if num % i ==0:
+#         cant_divisores+=1
+# if cant_divisores==2:
+#     print("Es primo")
 
-# Ingresar un número. Mostrar cada número primo que hay entre el 1 y el número ingresado. Informar cuántos números primos se encontraron.
+
+# Ingresar un número. Mostrar cada número primo que hay entre el 1 y el número ingresado.
+# Informar cuántos números primos se encontraron.
+
+# num=int(input("Ingrese para saber si es un numero primo: "))
+# cant_divisores=2
+# cant_primos=0
+# for i in range(2, num):
+#     if num % i ==0:
+#         cant_divisores+=1
+#         cant_primos+=1
+#     if num% i== 0 and cant_divisores==2:
+#         # cant_primos+=1
+#         print(f"El {i} es primo en el recorrido hasta {num}")
+# print(f"Se encontraron{cant_primos} mintras llegabamos a {num}")
+
+# Me falta arreglar este, toy cansado por hoy
